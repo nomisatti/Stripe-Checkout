@@ -24,6 +24,3 @@
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
  }
-.btn-danger {
-    float:right !important;
-}

@@ -1,6 +1,6 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')('sk_test_51HmAjKL0MJqcaXNQPbJT1HmB8RcYcTI0AMG0Dwi979OkMrTJpIvP0gl78z2LZAnYzmceTSj75HtYP3ezYcZ8Y68P00JSUfF0gr');
 
 
 exports.handler = async (event , context) => {

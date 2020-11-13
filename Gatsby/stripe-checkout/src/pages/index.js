@@ -8,9 +8,8 @@ import './index.css'
 const stripePromise = loadStripe("pk_test_51HmAjKL0MJqcaXNQYxNgmeMfWMXh6s0bjUjQbMiB8BvXbKdNIrj7IWyiEATKhU6wxChktEuEFZ6NYiiTJDKPcRrN00cdzDpm7v");
 
 
-export default function Home({ location }) {
-
-
+export default function Home() {
+  
   const data = useStaticQuery(
     graphql`
         query ProductPrices {
@@ -63,8 +62,8 @@ export default function Home({ location }) {
 
           {ProductData &&
             ProductData.map((item) => (
-              <Col xs={8} md={6} lg={4}>
-                <Card key={item.node.id} style={{ width: '18rem' }}>
+              <Col  key={item.node.id} xs={8} md={6} lg={4}>
+                <Card style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={item.node.product.images[0]} />
                   <Card.Body>
                     <Card.Title>{item.node.product.name}</Card.Title>

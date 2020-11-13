@@ -13,7 +13,7 @@ module.exports = {
     resolve: `gatsby-source-stripe`,
     options: {
       objects: ["Price"],
-      secretKey: process.env.STRIPE_SECRET_KEY,
+      secretKey: 'sk_test_51HmAjKL0MJqcaXNQPbJT1HmB8RcYcTI0AMG0Dwi979OkMrTJpIvP0gl78z2LZAnYzmceTSj75HtYP3ezYcZ8Y68P00JSUfF0gr',
       downloadFiles: false,
     },
   }
